@@ -1,0 +1,590 @@
+/*Home page*/
+
+.nav-link {
+    font-family: Marker Felt, fantasy;
+    font-size: 2em;
+    color: white
+}
+
+.navbar-brand {
+    opacity: 1 !important;
+    display: block;
+    height: 60px;
+    background: #222;
+}
+
+#logo {
+    margin-left: 92%;
+    box-shadow: 0px 10px 50px rgb(black);
+    align-items: center;
+}
+
+.homeImages,
+.homeImages2,
+.homeImages3 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    width: 20%;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    align-items: center;
+}
+
+.homeImages:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 10px 50px;
+    margin: 10;
+    background: rgb(rgba(46, 45, 45, 0.885));
+    color: #999;
+}
+
+#backToTop,
+#copyRight,
+.backToOtherPages {
+    text-align: center;
+}
+
+
+/*About us page*/
+
+.about-us__header-title,
+.masthead__heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 1em;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.about-us__header-title span {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.aboutUsP,
+.masthead__paragraph {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: monospace;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.aboutContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+}
+
+#imageAboutUs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+/*Shop css*/
+
+.container_masthead__products_eyes,
+.container_masthead__products_lips,
+.container_masthead__products_face {
+    margin-left: 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80%;
+    width: 80%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(108, 108, 114, 0.693)
+}
+
+.infoProduct {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.price {
+    font-family: monospace;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+
+/* shopping cart*/
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total,
+.coupon-total,
+.vat-total,
+.shipping-total,
+.cart-total-final {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title,
+.cartFinal-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.coupon-total-title,
+.vat-total-title,
+.shipping-total-title,
+.cartFinal-total-title {
+    font-weight: bold;
+    font-size: 1.em;
+    color: black;
+    margin-right: 20px;
+}
+
+.coupon-total-price,
+.vat-total-titpricele,
+.shipping-total-price .cart-total-price,
+.cart-total-final {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-primary {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+    color: white;
+}
+
+
+/* purchase page */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+}
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.containerPurchase,
+.containerCartInfo {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgb(90, 87, 87);
+    border-radius: 3px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid rgb(90, 87, 87);
+    border-radius: 3px;
+}
+
+.btn {
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+.radio-wrapper {
+    padding: 10px;
+    margin-left: 10%;
+}
+
+
+/*Shipping*/
+
+.shippingOptions {
+    margin-left: 20%
+}
+
+
+/*Coupon*/
+
+.promotion {
+    float: left;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.promotion>label {
+    float: left;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.promotion>input {
+    float: left;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 1.8rem;
+    border: 2px solid #16cc9b;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.promotion:hover>input {
+    border-color: #f58551;
+}
+
+.promotion>button {
+    float: left;
+    width: 20%;
+    height: 2.4rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.promotion:hover>button {
+    border-color: #f58551;
+    background-color: #f58551;
+}
+
+.promotion>button::after {
+    content: "\276f";
+    font-size: 1rem;
+}
+
+
+/* store coupon style */
+
+#promo {
+    display: block;
+    margin-bottom: 0.3125rem;
+}
+
+.basket,
+.basket-module,
+.basket-labels {
+    float: left;
+}
+
+.basket-labels {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 1.625rem;
+}
+
+.basket-module {
+    color: #111;
+    font-size: 0.75rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.promo-code-field {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+    width: 48%;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+.promo-code-field:hover,
+.promo-code-field:focus {
+    border: 1px solid #999;
+}
+
+.promo-code-cta {
+    border-radius: 4px;
+    font-size: 0.625rem;
+    margin-left: 0.625rem;
+    padding: 0.6875rem 1.25rem 0.625rem;
+}
+
+
+/* store coupon style */
+
+.coupon-listing-item {
+    padding-bottom: 0px;
+}
+
+.coupon-listing-item .offer-image img {
+    width: 100%;
+}
+
+.coupon-listing-item .c-type .c-code {
+    background: #b9dc2f;
+    color: #FFFFFF;
+    padding: 4px 10px 4px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.coupon-listing-item .c-type .exp {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 10px;
+}
+
+.coupon-listing-item .coupon-detail .voted-value {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.ui.buttons {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px .25em 0 0;
+}
+
+.ui.basic.buttons .button {
+    border-left: 1px solid rgba(39, 41, 43, .15);
+    box-shadow: none;
+}
+
+.coupon-listing-item .coupon-detail .ui.basic.buttons {
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+
+.ui.buttons:not(.basic):not(.inverted)>.button,
+.ui.buttons>.ui.button:not(.basic):not(.inverted) {
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(39, 41, 43, .15) inset;
+}
+
+.coupon-listing-item .coupon-detail .user-ratting .ui.button {
+    padding: 5px 10px 5px;
+}
+
+.ui.buttons .button {
+    float: left;
+    border-radius: 0;
+    margin: 0;
+}
+
+.ui.buttons .button:first-child {
+    border-left: none;
+}
+
+
+/*jQuery sign up button*/
+
+.hide {
+    display: none;
+}
+
+#signupContainer {
+    margin: 20px auto 0;
+    width: 40%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    background: #333;
+    background-image: -moz-linear-gradient(bottom, #ffffff, #000000);
+    background-image: -webkit-linear-gradient(bottom, #ffffff, #000000);
+    background-image: linear-gradient(bottom, #ffffff, #000000);
+    opacity: 0.83;
+    clear: left;
+    padding: 20px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+a.signUpButton {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f6f6f6;
+    padding: 10px 20px;
+}
+
+a.signUpButton:hover {
+    background-color: rgb(0, 217, 255) !important;
+}
+
+.signUpButton {
+    font: 18px/22px 'Oswald', sans-serif;
+    background-color: #363636 !important;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 80%;
+}
+
+.signUpButton:hover {
+    background-color: rgb(0, 217, 255) !important;
+}
+
+input:focus {
+    border-color: #777 !important;
+    color: #000;
+}
+
+h2.signup {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #f6f6f6;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px #696969;
+    border-bottom: 1px solid rgb(0, 217, 255);
+    width: 97%;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26px;
+    color: black;
+}

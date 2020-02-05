@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="CapstoneProjectII.js" type="text/javascript" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CapstoneProjectII.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="https://musicglue-images-prod.global.ssl.fastly.net/bassment/event/2018-10-06-oh-maddie-vinyl-release-party-bassment?u=aHR0cHM6Ly9tdXNpY2dsdWUtdXNlci1hcHAtcC0zLXAuczMuYW1hem9uYXdzLmNvbS9vcmlnaW5hbHMvNjc3NzliNTAtOGNkNS0wMTM2LWFhMzQtMzIwYTA3YzQ0OWI1&mode=fit&width=600&v=2"
+                    width="80" alt="" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="home.html" class="nav-link">HOME <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">ABOUT<i class="fas fa-value-absolute    "></i> </a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <!--Sign up jQuery button: show/hide-->
+
+    <div id="announcementWrapper">
+        <a href="#signup" class="signUpButton">Sign Up Now</a>
+    </div>
+
+    <div class="hide" id="signup">
+        <div id="signupContainer">
+            <form action="" method="post" id="subscribeForm" name="subscribeForm">
+                <h2 class="signup">Get notified for new products</h2>
+                <div class="fieldGroup">
+                    <label for="myEmail">Email Address </label>
+                    <input type="email" value="" name="email" class="required email" id="myEmail">
+                </div>
+                <div class="clear">
+                    <input type="submit" value="Notify Me" class="notifyButton">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        //jQuery hide/show - sign up for newsletter on shop page $(document).ready(function() { $('#announcementWrapper').click(function(event) { event.stopPropagation(); $('#signup').toggle(); }); $(document).click(function(event) { let formContainer = $("#signup");
+        $(document).ready(function() {
+            $('#announcementWrapper').click(function(event) {
+                event.stopPropagation();
+                $('#signup').toggle();
+            });
+            $(document).click(function(event) {
+                var formContainer = $("#signup");
+                var btnLink = $("#announcementWrapper");
+                if (formContainer.has(event.target).length === 0 && btnLink.has(event.target).length === 0) {
+                    formContainer.hide();
+                }
+            });
+        });
+    </script>
+    <br><br>
+    <!-- I added some images and a video-->
+    <div class="page-container">
+        <div class="page-back">
+        </div>
+        <div class="page-front">
+            <img src="https://www.collectoffers.com/EditorImages/Make-up-Banner.png " alt="make-up image " width="100%">
+        </div>
+    </div>
+    <!-- some images  -->
+    <img class="homeImages" src="https://i.pinimg.com/474x/1a/a4/1e/1aa41eea7f74d5e47e677401c5db39ef.jpg " alt="make-up image2 ">
+    <img class="homeImages" src="https://i.pinimg.com/474x/cf/05/1c/cf051ca7203cb597283616b5152c5c72.jpg " alt="make-up image2 ">
+    <img class="homeImages" src="https://i.pinimg.com/474x/59/19/b0/5919b0fc142131718b64eec50e2ccc31.jpg " alt="make-up image2 ">
+    <img class="homeImages" src="https://i.pinimg.com/236x/f1/ca/12/f1ca12d0307d47b5d13fc5d095c360fb--how-to-perfect-foundation-how-to-apply-foundation-and-concealer.jpg " alt="make-up image ">
+    <button>Start Animation</button>
+    <br>
+    <!--A video-->
+    <div id="videoContainer">
+        <iframe id="video" width="999 " height="562 " src="https://www.youtube.com/embed/FRIDLxM8Roc? " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+    </div>
+    <br>
+    <!-- add jQuery script-->
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                var container = $("#videoContainer");
+                container.animate({
+                    height: '300px',
+                    opacity: '0.4'
+                }, "slow");
+                container.animate({
+                    width: '300px',
+                    opacity: '0.8'
+                }, "slow");
+                container.animate({
+                    height: '100px',
+                    opacity: '0.4'
+                }, "slow");
+                container.animate({
+                    width: '100px',
+                    opacity: '0.8'
+                }, "slow");
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer ">
+        <div id="backToTop "><a href="#announcementWrapper">BACK TO TOP</a></div>
+        <br>
+        <div id="copyRight ">©2019 Oh Maddie</div>
+    </footer>
+</body>
+
+</html>
